@@ -440,7 +440,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 20px;
   height: 20px;
   border-radius: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
   opacity: 0.4;
   
   
@@ -577,6 +577,7 @@ section {
 .featured {
   position: relative;
   z-index: 2;
+  margin-top: 8%;
 }
 .featured .icon-box {
   padding: 40px 30px;
@@ -585,31 +586,48 @@ section {
   background: #fff;
   transition: all ease-in-out 0.3s;
   height: 100%;
+  cursor: pointer;
+
 }
 .featured .icon-box i {
-  color: #e96b56;
+  color: #0f9951;
   font-size: 42px;
   margin-bottom: 15px;
+  margin-top: 15px;
   display: block;
   line-height: 0;
+  
+  
+}
+.featured .icon-box i img {
+  padding-right: 35%;
+  cursor: pointer;
+  
 }
 .featured .icon-box h3 {
+  font-family: 'beIN Normal';
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
+  text-align: center;
+  cursor: pointer;
 }
 .featured .icon-box h3 a {
   color: #545454;
   transition: 0.3s;
+  font-family: 'beIN Normal';
+
 }
 .featured .icon-box p {
+  font-family: 'beIN Normal';
   color: #545454;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  cursor: pointer;
 }
 .featured .icon-box:hover {
-  background: #e96b56;
+  background: #bd7605;
 }
 .featured .icon-box:hover i, .featured .icon-box:hover h3 a, .featured .icon-box:hover p {
   color: #fff;
@@ -1902,3 +1920,103 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+
+/* adv section */
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text{
+  padding:40px;
+  background:#eee;
+}
+
+.text h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding:10px;
+}
+
+.banner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-container .banner{
+  background:linear-gradient(-55deg, #ff7675 29%, #d63031 29.1%, #d63031 68%, #ff7675 68.1%);
+  border-radius: 5px;
+  margin:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 10px #0005;
+  overflow: hidden;
+}
+
+.banner-container .banner .shoe{
+  flex:1 1 250px;
+  padding:15px;
+  text-align: center;
+}
+
+.banner-container .banner .shoe img{
+  width:80%;
+}
+
+.banner-container .banner .content{
+  flex:1 1 250px;
+  text-align: center;
+  padding:10px;
+  text-transform: uppercase;
+}
+
+.banner-container .banner .content span{
+  color:#eee;
+  font-size: 25px;
+}
+
+.banner-container .banner .content h3{
+  color:#fff;
+  font-size: 40px;
+}
+
+.banner-container .banner .content p{
+  color:#eee;
+  font-size: 20px;
+  padding:10px 0;
+}
+
+.banner-container .banner .content .btn{
+  display: block;
+  height:40px;
+  width:150px;
+  line-height: 40px;
+  background: #fff;
+  color:#d63031;
+  margin:5px auto;
+  text-decoration: none;
+}
+
+.banner-container .banner .women{
+  position: relative;
+  bottom: -33px;
+  padding:10px;
+  flex:1 1 250px;
+}
+
+.banner-container .banner .women img{
+  width:100%;
+}
+
+@media (max-width:768px){
+  .banner-container .banner .women{
+      display: none;
+  }
+}
+/* end adv section */
