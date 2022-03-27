@@ -395,8 +395,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: arken(#545454, 15);
+  /* color: arken(#545454, 15); */
   padding-left: 200px;
+  font-family: 'beIN Normal';
+  color: #0A6637
+  ;
 
 }
 #hero .carousel-inner .carousel-item {
@@ -547,11 +550,15 @@ section {
   background: #f7f7f7;
   border-bottom: 1px solid #ededed;
   margin-bottom: 40px;
+  font-family: 'beIN Normal';
+
 }
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 700;
   color: #545454;
+  font-family: 'beIN Normal';
+
 }
 .breadcrumbs ol {
   display: flex;
@@ -560,6 +567,8 @@ section {
   padding: 0 0 5px 0;
   margin: 0;
   font-size: 14px;
+  font-family: 'beIN Normal';
+
 }
 .breadcrumbs ol li + li {
   padding-left: 10px;
@@ -622,7 +631,7 @@ section {
   font-family: 'beIN Normal';
   color: #545454;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
   cursor: pointer;
 }
@@ -640,6 +649,8 @@ section {
   font-weight: 600;
   font-size: 26px;
   color: #545454;
+  font-family: 'beIN Normal';
+
 }
 .about .content ul {
   list-style: none;
@@ -1047,21 +1058,24 @@ section {
   padding-top: 40px;
 }
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 70%;
+  border: #0d974f solid 2px;
+  border-radius: 15px;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  margin-left: 20px;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #e96b56;
+  border: 1px solid #f2b235;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #e96b56;
+  background-color: #09964d;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
