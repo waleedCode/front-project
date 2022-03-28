@@ -26,17 +26,24 @@ body {
 }
 
 a {
-  color: #e96b56;
+  color: #efa109;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e6573f;
+  color: #f1ad28;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'beIN Normal';
+  color: #f1ad28;
+}
+p{
+  font-family: 'beIN Normal';
+  font-weight:400px ;
+  letter-spacing: .5px;
+  color: #08964c;
 }
 
 /*--------------------------------------------------------------
@@ -49,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #e96b56;
+  background: #f1ad28;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -61,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #ee8b7a;
+  background: #f1ad28;
   color: #fff;
 }
 .back-to-top.active {
@@ -146,6 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
+  padding-left: 370px;
 }
 .navbar ul {
   margin: 0;
@@ -374,31 +382,36 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 120px;
 }
 #hero .carousel-content {
-  text-align: center;
+  /* text-align: center; */
+  text-align: auto;
+
 }
+
 #hero h2 {
-  padding-top: 50px;
-  color: #2e2e2e;
+  /* padding-top: 50px; */
+  /* color: #2e2e2e; */
   margin-bottom: 30px;
   font-size: 48px;
-  padding-left: 500px;
+  padding-left: auto;
   font-weight: 600;
+  text-align: center;
+  color:  #2e2e2e;
+ 
 }
 #hero h2 span {
-  padding-top: 50px;
-
+  text-align: center;
   color: #efa109;
 
 }
 #hero p {
-  width: 80%;
+  width: 100hv;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   /* color: arken(#545454, 15); */
   padding-left: 200px;
   font-family: 'beIN Normal';
-  color: #0A6637
+  color: #1a1b1b
   ;
 
 }
@@ -443,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 20px;
   height: 20px;
   border-radius: 50px;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
   opacity: 0.4;
   
   
@@ -457,7 +470,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 32px;
+  padding: 12px 30px;
   border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
@@ -467,8 +480,9 @@ h1, h2, h3, h4, h5, h6 {
   animation-delay: 0.8s;
   border: 2px solid rgb(239 161 9);
   background: rgb(239 161 9);
-  margin-bottom: 10px;
-  margin-right: 50px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 50%;
 }
 #hero .btn-get-started:hover {
   background: transparent;
@@ -486,18 +500,32 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     
   }
+ 
 }
 @media (max-width: 768px) {
+
   #hero {
     height: 90vh;
   }
   #hero .carousel-item {
-    height: 90vh;
+    height:90vh ;
+    padding: 0 10px 0 100px;
+    
+  }
+  #hero .btn-get-started {
+    margin-right: 160px;
+
+  }
+  #hero p{
+    padding-left: 50px;
+    text-align: center;
+    width: auto;
+    padding: auto;
   }
 }
 @media (min-width: 1024px) {
   #hero p {
-    width: 60%;
+    width: 70%;
     
   }
   #hero .carousel-control-prev, #hero .carousel-control-next {
@@ -553,10 +581,15 @@ section {
   font-family: 'beIN Normal';
 
 }
+.breadcrumbs a{
+  font-family: 'beIN Normal';
+  color: #EFA109;
+}
 .breadcrumbs h2 {
-  font-size: 28px;
+  text-align: center;
+  font-size: 30px;
   font-weight: 700;
-  color: #545454;
+  color: #f3ad18;
   font-family: 'beIN Normal';
 
 }
@@ -668,6 +701,17 @@ section {
   margin-bottom: 0;
 }
 
+
+
+/*--------------------------------------------------------------
+#  Images border style
+--------------------------------------------------------------*/
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
 /*--------------------------------------------------------------
 # Our Services
 --------------------------------------------------------------*/
@@ -720,7 +764,7 @@ section {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  background: #e96b56;
+  background: rgba(214, 215, 216, 0.6)
   border-color: #e96b56;
 }
 .services .icon-box:hover .icon {
@@ -774,7 +818,7 @@ section {
 .counts .count-box i {
   display: block;
   font-size: 30px;
-  color: #e96b56;
+  color: #ddac53;
   float: left;
   line-height: 0;
 }
